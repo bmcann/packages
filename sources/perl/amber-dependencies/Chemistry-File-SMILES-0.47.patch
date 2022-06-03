@@ -1,0 +1,8 @@
+--- write.pl	2004-07-15 05:45:26.000000000 +0100
++++ write.pl	2020-06-03 14:49:31.292807918 +0100
+@@ -1,4 +1,4 @@
+-#!/home/ivan/bin/perl -s
++#!/usr/bin/perl -s
+ 
+ use blib;
+ use Chemistry::File::SMILES;

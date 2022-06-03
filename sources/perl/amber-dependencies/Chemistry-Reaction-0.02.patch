@@ -1,0 +1,16 @@
+--- lib/Chemistry/Reaction.pm	2004-09-26 19:59:57.000000000 +0100
++++ lib/Chemistry/Reaction.pm	2020-06-03 18:22:18.550214784 +0100
+@@ -404,11 +404,11 @@
+ 
+ L<Chemistry::Mol>, L<Chemistry::Pattern>, L<Chemistry::Tutorial>
+ 
+-Rosselló, F. and G. Valiente, Analysis of metabolic pathways by graph
++RossellE<oacute>, F. and G. Valiente, Analysis of metabolic pathways by graph
+ transformation, in: Proc. 2nd Int. Conf. Graph Transformation, Lecture
+ Notes in Computer Science 3256 (2004), pp. 73--85.
+ 
+-Rosselló, F. and G. Valiente, Chemical graphs, chemical reaction
++RossellE<oacute>, F. and G. Valiente, Chemical graphs, chemical reaction
+ graphs, and chemical graph transformation, in: Proc. 2nd Int. Workshop
+ on Graph-Based Tools, Electronic Notes in Theoretical Computer Science
+ (2004), in press.
