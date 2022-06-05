@@ -41,7 +41,7 @@ This package installs the FLEXlm licence manager daemon (lmgrd).
 # NOTE: This file is no longer used since moving to systemd service management
 FLEXLM_VENDORS=""
 EOF
-%{__cp} -a %{_topdir}/SOURCES/lmgrd@.service ./
+%{__cp} -a %{SOURCE1} ./
 
 %install
 %{__rm} -rf %{buildroot}

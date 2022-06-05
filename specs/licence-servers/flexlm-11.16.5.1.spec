@@ -35,7 +35,7 @@ echo '# Space-separated list of vendor daemons to start' > FLEXlm.conf
 echo '# The licence and log files will be derived from these names' >> FLEXlm.conf
 echo '# NOTE: This file is no longer used since moving to systemd service management' >> FLEXlm.conf
 echo 'FLEXLM_VENDORS=""' >> FLEXlm.conf
-%{__cp} -a %{_topdir}/SOURCES/lmgrd@.service ./
+%{__cp} -a %{SOURCE1} ./
 
 %install
 %{__rm} -rf %{buildroot}
