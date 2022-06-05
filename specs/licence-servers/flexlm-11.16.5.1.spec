@@ -25,8 +25,12 @@ Requires:       coreutils, redhat-lsb-core, shadow-utils, systemd
 This package installs the 32-bit FLEXlm licence manager daemon (lmgrd).
 
 %prep
-%{__rm} -rf %{_topdir}/BUILD/%{tarball}_ver_%{version}
+cd %{_builddir}
+%{__rm} -rf %{tarball}_ver_%{version}
 unzip %{SOURCE0}
+if [ $? -ne 0 ]; then
+  exit $?
+fi
 cd %{tarball}_ver_%{version}
 %{__rm} -f _readme_.txt
 %{__rm} -f fnp_LicAdmin.pdf
