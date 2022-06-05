@@ -13,7 +13,6 @@ Source0:        cudnn-linux-x86_64-8.4.0.27_cuda11.6-archive.tar.gz
 Vendor:         Nvidia
 Packager:       Tacaíocht Ríomhaireachta <tacaiocht.riomhaireachta@ucd.ie>
 BuildArch:      x86_64
-BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
 Requires:       cuda-11-6 >= 11.6.2
 Prefix:         /usr/local/cuda-11.6
 Prefix:         /usr/lib64/pkgconfig

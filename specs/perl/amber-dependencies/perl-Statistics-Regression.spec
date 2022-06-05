@@ -19,7 +19,6 @@ Packager:       Tacaíocht Ríomhaireachta <tacaiocht.riomhaireachta@ucd.ie>
 Vendor:         Ivo Welch <ivo.welch@yale.edu>
 
 Source:         http://www.cpan.org/modules/by-module/Statistics/Statistics-Regression-%{version}.tar.gz
-BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-root
 
 BuildArch:      noarch
 BuildRequires:  perl >= 0:5.005

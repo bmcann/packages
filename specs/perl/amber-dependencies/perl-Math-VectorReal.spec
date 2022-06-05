@@ -19,7 +19,6 @@ Packager:       Tacaíocht Ríomhaireachta <tacaiocht.riomhaireachta@ucd.ie>
 Vendor:         Anthony Thyssen <Anthony.Thyssen@gmail.com>
 
 Source:         http://www.cpan.org/modules/by-module/Math/Math-VectorReal-%{version}.tar.gz
-BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-root
 
 BuildRequires:  perl
 BuildRequires:  perl(ExtUtils::MakeMaker)

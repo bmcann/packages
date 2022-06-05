@@ -15,8 +15,6 @@ Packager:       Tacaíocht Ríomhaireachta <tacaiocht.riomhaireachta@ucd.ie>
 
 BuildArch:      x86_64
 
-BuildRoot:      %{_tmppath}/%{tarball}-%{version}-%{release}-root-%(%{__id_u} -n)
-
 BuildRequires:  coreutils
 Requires:       flexlm = 11.16.3.0, systemd
 

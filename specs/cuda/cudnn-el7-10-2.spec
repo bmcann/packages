@@ -13,7 +13,6 @@ Source0:        cudnn-10.2-linux-x64-v7.6.5.32.tgz
 Vendor:         Nvidia
 Packager:       Tacaíocht Ríomhaireachta <tacaiocht.riomhaireachta@ucd.ie>
 BuildArch:      x86_64
-BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
 Requires:       cuda-license-10-2 >= 10.2.89
 Prefix:         /usr/local/cuda-10.2
 Prefix:         /usr/lib64/pkgconfig

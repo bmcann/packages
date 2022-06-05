@@ -22,8 +22,6 @@ Packager:       Tacaíocht Ríomhaireachta <tacaiocht.riomhaireachta@ucd.ie>
 
 BuildArch:      noarch
 
-BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
-
 Requires: perl(CAF::FileEditor)
 Requires: perl(CAF::FileWriter)
 Requires: perl(CAF::Object)

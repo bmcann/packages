@@ -13,8 +13,6 @@ Packager:       Tacaíocht Ríomhaireachta <tacaiocht.riomhaireachta@ucd.ie>
 
 BuildArch:      x86_64
 
-BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
-
 %description
 A command line interface utility for Dell Boot Optimised Storage Solution BOSS-S1 cards
 

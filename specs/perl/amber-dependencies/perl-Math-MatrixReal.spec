@@ -19,7 +19,6 @@ Packager:       Tacaíocht Ríomhaireachta <tacaiocht.riomhaireachta@ucd.ie>
 Vendor:         Jonathan Leto <jonathan@leto.net>
 
 Source:         http://www.cpan.org/modules/by-module/Math/Math-MatrixReal-%{version}.tar.gz
-BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-root
 
 BuildArch:      noarch
 BuildRequires:  perl

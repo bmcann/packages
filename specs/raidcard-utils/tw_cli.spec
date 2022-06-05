@@ -13,8 +13,6 @@ Packager:       Tacaíocht Ríomhaireachta <tacaiocht.riomhaireachta@ucd.ie>
 
 BuildArch:      x86_64
 
-BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
-
 %description
 A command line interface utility for 3ware RAID cards, release 10.2 supports the
 9750, 9690SA and 9650SE models

@@ -19,7 +19,6 @@ Packager:       Tacaíocht Ríomhaireachta <tacaiocht.riomhaireachta@ucd.ie>
 Vendor:         Ivan Tubert-Brohman <itub@cpan.org>
 
 Source:         http://www.cpan.org/modules/by-module/Chemistry/Chemistry-3DBuilder-%{version}.tar.gz
-BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-root
 
 BuildArch:      noarch
 BuildRequires:  perl

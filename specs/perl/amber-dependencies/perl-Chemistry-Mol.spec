@@ -19,7 +19,6 @@ Packager:       Tacaíocht Ríomhaireachta <tacaiocht.riomhaireachta@ucd.ie>
 Vendor:         Andrius Merkys <andrius.merkys@gmail.com>
 
 Source:         http://www.cpan.org/modules/by-module/Chemistry/Chemistry-Mol-%{version}.tar.gz
-BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-root
 
 BuildArch:      noarch
 BuildRequires:  perl

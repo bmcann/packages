@@ -19,7 +19,6 @@ Packager:       Tacaíocht Ríomhaireachta <tacaiocht.riomhaireachta@ucd.ie>
 Vendor:         William N. Braswell, Jr. <wbraswell_cpan@NOSPAM.nym.hush.com>
 
 Source:         http://www.cpan.org/modules/by-module/Parse/Parse-Yapp-%{version}.tar.gz
-BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-root
 
 BuildArch:      noarch
 BuildRequires:  perl
