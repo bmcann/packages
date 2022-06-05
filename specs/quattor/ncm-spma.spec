@@ -6,6 +6,12 @@ Summary:        NCM component for spma
 License:        ASL 2.0 and EU Datagrid
 Group:          System Environment/Base
 URL:            https://github.com/quattor/configuration-modules-core/tree/master/ncm-spma
+# The Source0 tarball was prepared by downloading the 21.12.0-1 RPM from the EL8
+# repository, extracting the contents and placing the contents into a tarball
+
+# wget http://yum.quattor.org/21.12.0/el8/ncm-spma-21.12.0-1.noarch.rpm
+# rpm2cpio ncm-spma-21.12.0-1.noarch.rpm | cpio -imdv
+# tar -czf ncm-spma-21.12.1.tar.gz usr/
 Source0:        %{name}-%{version}.tar.gz
 Source1:        spmaleaves.py
 
