@@ -18,7 +18,7 @@ BuildArch:      x86_64
 
 BuildRoot:      %{_tmppath}/%{tarball}-%{version}-%{release}-root-%(%{__id_u} -n)
 
-BuildRequires:  coreutils, sed, systemd
+BuildRequires:  coreutils, sed, systemd, systemd-rpm-macros
 Requires:       coreutils, redhat-lsb-core, shadow-utils, systemd
 
 %description
