@@ -31,10 +31,12 @@ cd %{tarball}_ver_%{version}
 %{__rm} -f _readme_.txt
 %{__rm} -f fnp_LicAdmin.pdf
 %{__rm} -f orglab
-echo '# Space-separated list of vendor daemons to start' > FLEXlm.conf
-echo '# The licence and log files will be derived from these names' >> FLEXlm.conf
-echo '# NOTE: This file is no longer used since moving to systemd service management' >> FLEXlm.conf
-echo 'FLEXLM_VENDORS=""' >> FLEXlm.conf
+%{__cat} << 'EOF' > FLEXlm.conf
+# Space-separated list of vendor daemons to start
+# The licence and log files will be derived from these names
+# NOTE: This file is no longer used since moving to systemd service management
+FLEXLM_VENDORS=""
+EOF
 %{__cp} -a %{SOURCE1} ./
 
 %install

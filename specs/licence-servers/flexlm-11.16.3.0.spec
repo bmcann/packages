@@ -26,11 +26,15 @@ This package installs the FLEXlm licence manager daemon (lmgrd).
 
 %prep
 %setup -q -n %{tarball}-%{vendor}-%{version}-x64_lsb
-%{__rm} -f FLEXlm.init
 %{__rm} -f bin/PSELMD
-%{__sed} -i 's/license/licence/g' FLEXlm.conf
-%{__sed} -i '3i# NOTE: This file is no longer used since moving to systemd service management' FLEXlm.conf
-%{__sed} -i '/FLEXLM_VENDORS/s/".*"/""/' FLEXlm.conf
+%{__rm} -f FLEXlm.init
+%{__rm} -f FLEXlm.conf
+%{__cat} << 'EOF' > FLEXlm.conf
+# Space-separated list of vendor daemons to start
+# The licence and log files will be derived from these names
+# NOTE: This file is no longer used since moving to systemd service management
+FLEXLM_VENDORS=""
+EOF
 %{__cp} -a %{SOURCE1} ./
 
 %install
