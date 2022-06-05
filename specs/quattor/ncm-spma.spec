@@ -14,6 +14,8 @@ URL:            https://github.com/quattor/configuration-modules-core/tree/maste
 # tar -czf ncm-spma-21.12.1.tar.gz usr/
 Source0:        %{name}-%{version}.tar.gz
 Source1:        spmaleaves.py
+Patch0:         yum.pm.patch
+Patch1:         yumdnf.pm.patch
 
 Vendor:         Quattor
 Packager:       Tacaíocht Ríomhaireachta <tacaiocht.riomhaireachta@ucd.ie>
@@ -62,6 +64,8 @@ Provides: perl(NCM::Component::spma::yumng)
 
 %prep
 %setup -q -c
+%patch -P 0 -p1
+%patch -P 1 -p1
 %{__cp} -a %{SOURCE1} ./
 
 %install
