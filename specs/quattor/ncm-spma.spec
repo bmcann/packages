@@ -70,70 +70,70 @@ Provides: perl(NCM::Component::spma::yumng)
 
 %install
 %{__rm} -rf %{buildroot}
-%{__mkdir} -p %{buildroot}/%{_prefix}/lib/perl/NCM/Component
-%{__mkdir} -p %{buildroot}/%{_prefix}/lib/perl/NCM/Component/spma
-%{__mkdir} -p %{buildroot}/%{_sbindir}
-%{__mkdir} -p %{buildroot}/%{_docdir}
-%{__mkdir} -p %{buildroot}/%{_docdir}/ncm-spma-21.12.0
-%{__mkdir} -p %{buildroot}/%{_docdir}/pan/components/spma
-%{__mkdir} -p %{buildroot}/%{_docdir}/pan/components/spma/apt
-%{__mkdir} -p %{buildroot}/%{_docdir}/pan/components/spma/dnf
-%{__mkdir} -p %{buildroot}/%{_docdir}/pan/components/spma/ips
-%{__mkdir} -p %{buildroot}/%{_docdir}/pan/components/spma/yum
-%{__mkdir} -p %{buildroot}/%{_docdir}/pan/components/spma/yumdnf
-%{__mkdir} -p %{buildroot}/%{_docdir}/pan/components/spma/yumng
-%{__mkdir} -p %{buildroot}/%{_mandir}/man8
-%{__mkdir} -p %{buildroot}/%{_datadir}/templates/quattor/spma
-%{__mkdir} -p %{buildroot}/%{_datadir}/templates/quattor/spma/apt
-%{__mkdir} -p %{buildroot}/%{_datadir}/templates/quattor/spma/yumplugins
-%{__mkdir} -p %{buildroot}/%{_datadir}/quattor/spma/yumdnf
-%{__install} -m 644 usr/lib/perl/NCM/Component/spma.pm %{buildroot}/%{_prefix}/lib/perl/NCM/Component/
-%{__install} -m 644 usr/lib/perl/NCM/Component/spma/dnf.pm %{buildroot}/%{_prefix}/lib/perl/NCM/Component/spma/
-%{__install} -m 644 usr/lib/perl/NCM/Component/spma/yum.pm %{buildroot}/%{_prefix}/lib/perl/NCM/Component/spma/
-%{__install} -m 644 usr/lib/perl/NCM/Component/spma/yumdnf.pm %{buildroot}/%{_prefix}/lib/perl/NCM/Component/spma/
-%{__install} -m 644 usr/lib/perl/NCM/Component/spma/yumng.pm %{buildroot}/%{_prefix}/lib/perl/NCM/Component/spma/
-%{__install} -m 750 usr/sbin/spma %{buildroot}/%{_sbindir}/
-%{__install} -m 644 usr/share/doc/ncm-spma-21.12.0/ChangeLog.template %{buildroot}/%{_docdir}/ncm-spma-21.12.0/
-%{__install} -m 644 usr/share/doc/pan/components/spma/apt/config.pan %{buildroot}/%{_docdir}/pan/components/spma/apt/
-%{__install} -m 644 usr/share/doc/pan/components/spma/apt/schema.pan %{buildroot}/%{_docdir}/pan/components/spma/apt/
-%{__install} -m 644 usr/share/doc/pan/components/spma/config-common-yum.pan %{buildroot}/%{_docdir}/pan/components/spma/
-%{__install} -m 644 usr/share/doc/pan/components/spma/config-common.pan %{buildroot}/%{_docdir}/pan/components/spma/
-%{__install} -m 644 usr/share/doc/pan/components/spma/config.pan %{buildroot}/%{_docdir}/pan/components/spma/
-%{__install} -m 644 usr/share/doc/pan/components/spma/dnf/config.pan %{buildroot}/%{_docdir}/pan/components/spma/dnf/
-%{__install} -m 644 usr/share/doc/pan/components/spma/dnf/schema.pan %{buildroot}/%{_docdir}/pan/components/spma/dnf/
-%{__install} -m 644 usr/share/doc/pan/components/spma/functions.pan %{buildroot}/%{_docdir}/pan/components/spma/
-%{__install} -m 644 usr/share/doc/pan/components/spma/ips/config.pan %{buildroot}/%{_docdir}/pan/components/spma/ips/
-%{__install} -m 644 usr/share/doc/pan/components/spma/ips/schema.pan %{buildroot}/%{_docdir}/pan/components/spma/ips/
-%{__install} -m 644 usr/share/doc/pan/components/spma/light.pan %{buildroot}/%{_docdir}/pan/components/spma/
-%{__install} -m 644 usr/share/doc/pan/components/spma/repository_cleanup.pan %{buildroot}/%{_docdir}/pan/components/spma/
-%{__install} -m 644 usr/share/doc/pan/components/spma/schema-common-yum.pan %{buildroot}/%{_docdir}/pan/components/spma/
-%{__install} -m 644 usr/share/doc/pan/components/spma/schema.pan %{buildroot}/%{_docdir}/pan/components/spma/
-%{__install} -m 644 usr/share/doc/pan/components/spma/software.pan %{buildroot}/%{_docdir}/pan/components/spma/
-%{__install} -m 644 usr/share/doc/pan/components/spma/yum/config.pan %{buildroot}/%{_docdir}/pan/components/spma/yum/
-%{__install} -m 644 usr/share/doc/pan/components/spma/yum/light.pan %{buildroot}/%{_docdir}/pan/components/spma/yum/
-%{__install} -m 644 usr/share/doc/pan/components/spma/yum/schema.pan %{buildroot}/%{_docdir}/pan/components/spma/yum/
-%{__install} -m 644 usr/share/doc/pan/components/spma/yumdnf/config.pan %{buildroot}/%{_docdir}/pan/components/spma/yumdnf/
-%{__install} -m 644 usr/share/doc/pan/components/spma/yumdnf/light.pan %{buildroot}/%{_docdir}/pan/components/spma/yumdnf/
-%{__install} -m 644 usr/share/doc/pan/components/spma/yumdnf/schema.pan %{buildroot}/%{_docdir}/pan/components/spma/yumdnf/
-%{__install} -m 644 usr/share/doc/pan/components/spma/yumng/config.pan %{buildroot}/%{_docdir}/pan/components/spma/yumng/
-%{__install} -m 644 usr/share/doc/pan/components/spma/yumng/schema.pan %{buildroot}/%{_docdir}/pan/components/spma/yumng/
-%{__install} -m 644 usr/share/man/man8/NCM::Component::spma.8.gz %{buildroot}/%{_mandir}/man8/
-%{__install} -m 644 usr/share/man/man8/NCM::Component::spma::dnf.8.gz %{buildroot}/%{_mandir}/man8/
-%{__install} -m 644 usr/share/man/man8/NCM::Component::spma::yum.8.gz %{buildroot}/%{_mandir}/man8/
-%{__install} -m 644 usr/share/man/man8/NCM::Component::spma::yumdnf.8.gz %{buildroot}/%{_mandir}/man8/
-%{__install} -m 644 usr/share/man/man8/NCM::Component::spma::yumng.8.gz %{buildroot}/%{_mandir}/man8/
-%{__install} -m 644 usr/share/templates/quattor/spma/apt/config.tt %{buildroot}/%{_datadir}/templates/quattor/spma/apt/
-%{__install} -m 644 usr/share/templates/quattor/spma/apt/preferences.tt %{buildroot}/%{_datadir}/templates/quattor/spma/apt/
-%{__install} -m 644 usr/share/templates/quattor/spma/apt/source.tt %{buildroot}/%{_datadir}/templates/quattor/spma/apt/
-%{__install} -m 644 usr/share/templates/quattor/spma/dnf_module.tt %{buildroot}/%{_datadir}/templates/quattor/spma/
-%{__install} -m 644 usr/share/templates/quattor/spma/repository.tt %{buildroot}/%{_datadir}/templates/quattor/spma/
-%{__install} -m 644 usr/share/templates/quattor/spma/yumplugins/fastestmirror.tt %{buildroot}/%{_datadir}/templates/quattor/spma/yumplugins/
-%{__install} -m 644 usr/share/templates/quattor/spma/yumplugins/generic.tt %{buildroot}/%{_datadir}/templates/quattor/spma/yumplugins/
-%{__install} -m 644 usr/share/templates/quattor/spma/yumplugins/priorities.tt %{buildroot}/%{_datadir}/templates/quattor/spma/yumplugins/
-%{__install} -m 644 usr/share/templates/quattor/spma/yumplugins/product-id.tt %{buildroot}/%{_datadir}/templates/quattor/spma/yumplugins/
-%{__install} -m 644 usr/share/templates/quattor/spma/yumplugins/subscription-manager.tt %{buildroot}/%{_datadir}/templates/quattor/spma/yumplugins/
-%{__install} -m 644 usr/share/templates/quattor/spma/yumplugins/versionlock.tt %{buildroot}/%{_datadir}/templates/quattor/spma/yumplugins/
-%{__install} -m 644 spmaleaves.py %{buildroot}/%{_datadir}/quattor/spma/yumdnf/
+%{__mkdir} -p %{buildroot}%{_prefix}/lib/perl/NCM/Component
+%{__mkdir} -p %{buildroot}%{_prefix}/lib/perl/NCM/Component/spma
+%{__mkdir} -p %{buildroot}%{_sbindir}
+%{__mkdir} -p %{buildroot}%{_docdir}
+%{__mkdir} -p %{buildroot}%{_docdir}/ncm-spma-21.12.0
+%{__mkdir} -p %{buildroot}%{_docdir}/pan/components/spma
+%{__mkdir} -p %{buildroot}%{_docdir}/pan/components/spma/apt
+%{__mkdir} -p %{buildroot}%{_docdir}/pan/components/spma/dnf
+%{__mkdir} -p %{buildroot}%{_docdir}/pan/components/spma/ips
+%{__mkdir} -p %{buildroot}%{_docdir}/pan/components/spma/yum
+%{__mkdir} -p %{buildroot}%{_docdir}/pan/components/spma/yumdnf
+%{__mkdir} -p %{buildroot}%{_docdir}/pan/components/spma/yumng
+%{__mkdir} -p %{buildroot}%{_mandir}/man8
+%{__mkdir} -p %{buildroot}%{_datadir}/templates/quattor/spma
+%{__mkdir} -p %{buildroot}%{_datadir}/templates/quattor/spma/apt
+%{__mkdir} -p %{buildroot}%{_datadir}/templates/quattor/spma/yumplugins
+%{__mkdir} -p %{buildroot}%{_datadir}/quattor/spma/yumdnf
+%{__install} -m 644 usr/lib/perl/NCM/Component/spma.pm %{buildroot}%{_prefix}/lib/perl/NCM/Component/
+%{__install} -m 644 usr/lib/perl/NCM/Component/spma/dnf.pm %{buildroot}%{_prefix}/lib/perl/NCM/Component/spma/
+%{__install} -m 644 usr/lib/perl/NCM/Component/spma/yum.pm %{buildroot}%{_prefix}/lib/perl/NCM/Component/spma/
+%{__install} -m 644 usr/lib/perl/NCM/Component/spma/yumdnf.pm %{buildroot}%{_prefix}/lib/perl/NCM/Component/spma/
+%{__install} -m 644 usr/lib/perl/NCM/Component/spma/yumng.pm %{buildroot}%{_prefix}/lib/perl/NCM/Component/spma/
+%{__install} -m 750 usr/sbin/spma %{buildroot}%{_sbindir}/
+%{__install} -m 644 usr/share/doc/ncm-spma-21.12.0/ChangeLog.template %{buildroot}%{_docdir}/ncm-spma-21.12.0/
+%{__install} -m 644 usr/share/doc/pan/components/spma/apt/config.pan %{buildroot}%{_docdir}/pan/components/spma/apt/
+%{__install} -m 644 usr/share/doc/pan/components/spma/apt/schema.pan %{buildroot}%{_docdir}/pan/components/spma/apt/
+%{__install} -m 644 usr/share/doc/pan/components/spma/config-common-yum.pan %{buildroot}%{_docdir}/pan/components/spma/
+%{__install} -m 644 usr/share/doc/pan/components/spma/config-common.pan %{buildroot}%{_docdir}/pan/components/spma/
+%{__install} -m 644 usr/share/doc/pan/components/spma/config.pan %{buildroot}%{_docdir}/pan/components/spma/
+%{__install} -m 644 usr/share/doc/pan/components/spma/dnf/config.pan %{buildroot}%{_docdir}/pan/components/spma/dnf/
+%{__install} -m 644 usr/share/doc/pan/components/spma/dnf/schema.pan %{buildroot}%{_docdir}/pan/components/spma/dnf/
+%{__install} -m 644 usr/share/doc/pan/components/spma/functions.pan %{buildroot}%{_docdir}/pan/components/spma/
+%{__install} -m 644 usr/share/doc/pan/components/spma/ips/config.pan %{buildroot}%{_docdir}/pan/components/spma/ips/
+%{__install} -m 644 usr/share/doc/pan/components/spma/ips/schema.pan %{buildroot}%{_docdir}/pan/components/spma/ips/
+%{__install} -m 644 usr/share/doc/pan/components/spma/light.pan %{buildroot}%{_docdir}/pan/components/spma/
+%{__install} -m 644 usr/share/doc/pan/components/spma/repository_cleanup.pan %{buildroot}%{_docdir}/pan/components/spma/
+%{__install} -m 644 usr/share/doc/pan/components/spma/schema-common-yum.pan %{buildroot}%{_docdir}/pan/components/spma/
+%{__install} -m 644 usr/share/doc/pan/components/spma/schema.pan %{buildroot}%{_docdir}/pan/components/spma/
+%{__install} -m 644 usr/share/doc/pan/components/spma/software.pan %{buildroot}%{_docdir}/pan/components/spma/
+%{__install} -m 644 usr/share/doc/pan/components/spma/yum/config.pan %{buildroot}%{_docdir}/pan/components/spma/yum/
+%{__install} -m 644 usr/share/doc/pan/components/spma/yum/light.pan %{buildroot}%{_docdir}/pan/components/spma/yum/
+%{__install} -m 644 usr/share/doc/pan/components/spma/yum/schema.pan %{buildroot}%{_docdir}/pan/components/spma/yum/
+%{__install} -m 644 usr/share/doc/pan/components/spma/yumdnf/config.pan %{buildroot}%{_docdir}/pan/components/spma/yumdnf/
+%{__install} -m 644 usr/share/doc/pan/components/spma/yumdnf/light.pan %{buildroot}%{_docdir}/pan/components/spma/yumdnf/
+%{__install} -m 644 usr/share/doc/pan/components/spma/yumdnf/schema.pan %{buildroot}%{_docdir}/pan/components/spma/yumdnf/
+%{__install} -m 644 usr/share/doc/pan/components/spma/yumng/config.pan %{buildroot}%{_docdir}/pan/components/spma/yumng/
+%{__install} -m 644 usr/share/doc/pan/components/spma/yumng/schema.pan %{buildroot}%{_docdir}/pan/components/spma/yumng/
+%{__install} -m 644 usr/share/man/man8/NCM::Component::spma.8.gz %{buildroot}%{_mandir}/man8/
+%{__install} -m 644 usr/share/man/man8/NCM::Component::spma::dnf.8.gz %{buildroot}%{_mandir}/man8/
+%{__install} -m 644 usr/share/man/man8/NCM::Component::spma::yum.8.gz %{buildroot}%{_mandir}/man8/
+%{__install} -m 644 usr/share/man/man8/NCM::Component::spma::yumdnf.8.gz %{buildroot}%{_mandir}/man8/
+%{__install} -m 644 usr/share/man/man8/NCM::Component::spma::yumng.8.gz %{buildroot}%{_mandir}/man8/
+%{__install} -m 644 usr/share/templates/quattor/spma/apt/config.tt %{buildroot}%{_datadir}/templates/quattor/spma/apt/
+%{__install} -m 644 usr/share/templates/quattor/spma/apt/preferences.tt %{buildroot}%{_datadir}/templates/quattor/spma/apt/
+%{__install} -m 644 usr/share/templates/quattor/spma/apt/source.tt %{buildroot}%{_datadir}/templates/quattor/spma/apt/
+%{__install} -m 644 usr/share/templates/quattor/spma/dnf_module.tt %{buildroot}%{_datadir}/templates/quattor/spma/
+%{__install} -m 644 usr/share/templates/quattor/spma/repository.tt %{buildroot}%{_datadir}/templates/quattor/spma/
+%{__install} -m 644 usr/share/templates/quattor/spma/yumplugins/fastestmirror.tt %{buildroot}%{_datadir}/templates/quattor/spma/yumplugins/
+%{__install} -m 644 usr/share/templates/quattor/spma/yumplugins/generic.tt %{buildroot}%{_datadir}/templates/quattor/spma/yumplugins/
+%{__install} -m 644 usr/share/templates/quattor/spma/yumplugins/priorities.tt %{buildroot}%{_datadir}/templates/quattor/spma/yumplugins/
+%{__install} -m 644 usr/share/templates/quattor/spma/yumplugins/product-id.tt %{buildroot}%{_datadir}/templates/quattor/spma/yumplugins/
+%{__install} -m 644 usr/share/templates/quattor/spma/yumplugins/subscription-manager.tt %{buildroot}%{_datadir}/templates/quattor/spma/yumplugins/
+%{__install} -m 644 usr/share/templates/quattor/spma/yumplugins/versionlock.tt %{buildroot}%{_datadir}/templates/quattor/spma/yumplugins/
+%{__install} -m 644 spmaleaves.py %{buildroot}%{_datadir}/quattor/spma/yumdnf/
 
 %post
 if [ -x /usr/bin/dnf ]; then
