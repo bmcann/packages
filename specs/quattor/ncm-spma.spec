@@ -55,14 +55,8 @@ Provides: perl(NCM::Component::spma::yumng)
 %{name}
 
 %prep
-cd ~/rpmbuild/BUILD
-%{__rm} -rf usr spmaleaves.py
-/usr/bin/gzip -dc ~/rpmbuild/SOURCES/%{name}-%{version}.tar.gz | /usr/bin/tar -xof -
-STATUS=$?
-if [ $STATUS -ne 0 ]; then
-    exit $STATUS
-fi
-%{__cp} -a %{_topdir}/SOURCES/spmaleaves.py ./
+%setup -q -c
+%{__cp} -a %{SOURCE1} ./
 
 %install
 %{__rm} -rf %{buildroot}
