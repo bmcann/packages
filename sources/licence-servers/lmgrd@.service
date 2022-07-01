@@ -1,0 +1,24 @@
+[Unit]
+Description=FLEXlm Licence Manager lmgrd service instance %I
+After=network.target remote-fs.target nss-lookup.target
+
+[Service]
+Environment="FLEXLM_BINDIR=/var/lib/FLEXlm/bin"
+Environment="FLEXLM_LICDIR=/var/lib/FLEXlm/licences"
+Environment="FLEXLM_LOGDIR=/var/log/FLEXlm"
+Environment="LMGRD=$FLEXLM_BINDIR/lmgrd"
+Environment="LMUTIL=$FLEXLM_BINDIR/lmutil"
+Environment="FLEXLM_USER=root"
+EnvironmentFile=-/etc/sysconfig/FLEXlm
+User=root
+Group=root
+Type=forking
+ExecStart=/bin/sh -c "/var/lib/FLEXlm/bin/lmgrd -c /var/lib/FLEXlm/licences/%i.lic -l +/var/log/FLEXlm/%i.log -reuseaddr"
+ExecStop=/bin/sh -c "/var/lib/FLEXlm/bin/lmutil lmdown -c /var/lib/FLEXlm/licences/%i.lic -vendor %i -q -all -force"
+ExecReload=/bin/sh -c "/var/lib/FLEXlm/bin/lmutil lmreread -c /var/lib/FLEXlm/licences/%i.lic -vendor %i -all"
+SuccessExitStatus=15
+Restart=always
+RestartSec=30
+
+[Install]
+WantedBy=multi-user.target
